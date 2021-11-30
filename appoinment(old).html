@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appoinment Form(Old)</title>
+    <link rel="stylesheet" href="appoinment(old).css">
+</head>
+<body>     
+    <h2 class="appoin_heading">Doctor Appoinment</h2>
+    <div class="main_section">
+        <div class="image">
+            <img src="img/home_1.jpg" alt="">
+        </div>
+        <div class="appoint">
+            <p class="heading">Appoinment Form</p>
+            <p class="content">A small river named Duden flows by their place and supplies it with the necessary regelialia. 
+                For checkup, book your appoinment.
+                Appoinment form for <strong>OLD</strong> patients.
+            </p>
+            <div class="old_form">
+                <form action="appoint.php" method="POST" autocomplete="on">
+                        <table>
+                            <tr>
+                                <td><label for="fname">First Name :</label></td>
+                                <td><input type="text" name="fname" id="fname"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="last">Last Name :</label></td>
+                                <td><input type="text" name="lname" id="lname"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">Email Id :</label></td>
+                                <td><input type="email" name="email" id="email"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="whatsapp">Whatsapp No. :</label></td>
+                                <td><input type="tel" name="wno" id="wno"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="gender">Patient's Gender :</label></td>
+                                <td class="gender_radio">
+                                    <input type="radio" name="gender" id="gender">Male
+                                    <input type="radio" name="gender" id="gender">Female
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="age">Patient's Age :</label></td>
+                                <td><input type="text" name="age" id="age"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="ptype">Patient's Type :</label></td>
+                                <td><input type="text" name="ptype" id="ptype" value="Old" readonly></td>
+                            </tr>
+                            <tr>
+                                <td><label for="doctor">Doctor's Name :</label></td>
+                                <td>
+                                    <input list="doctors" name="dname" id="dname" placeholder="Choose your doctor..">
+                                    <datalist id="doctors">
+                                        <option value="Dr. Sayandip Naskar">
+                                        <option value="Dr. Mitra Chakraborty">
+                                        <option value="Dr. Sayan Ghosh">
+                                        <option value="Dr. Sambit Ghosh">
+                                        <option value="Dr. Sudip Koley">
+                                        </datalist>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="ldate">Last Date of Appoinment :</label></td>
+                                <td><input type="date" name="lda" id="lda"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="ndate">Next Date of Appoinment :</label></td>
+                                <td>
+                                    <input type="date" name="nda" id="nda">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="reason">Reason Type :</label></td>
+                                <td>
+                                    <input list="reasons" name="reason" id="reason" placeholder="Give your reason">
+                                    <datalist id="reasons">
+                                        <option value="Report Checking">
+                                        <option value="Checkup">
+                                    </datalist>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="message">Message :</label></td>
+                                <td><textarea name="message" name="message"id="message" cols="30" rows="10"></textarea></td>
+                            </tr>
+                        </table>
+                        <button type="submit">Book Your Appoinment</button>
+                </form> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>

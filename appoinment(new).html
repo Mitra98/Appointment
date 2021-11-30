@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appoinment Form(New)</title>
+    <link rel="stylesheet" href="appoinment(new).css">
+</head>
+<body>
+    <h2 class="appoinment_heading">Appoinment Form for New Patients</h2>
+    <div class="section">
+        <form action="appoint2.php" method="POST">
+            <div class="header">
+            <table>
+                <tr>
+                    <td><label for="first">First Name :</label></td>
+                    <td><input type="text" name="fname" id="fname"></td>
+                </tr>
+                <tr>
+                    <td><label for="last">Last Name :</label></td>
+                    <td><input type="text" name="lname" id="lname"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email Id :</label></td>
+                    <td><input type="text" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="whatsapp">Whatsapp No. :</label></td>
+                    <td><input type="text" name="wno" id="wno"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Patient's Gender :</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="gender">Male
+                        <input type="radio" name="gender" id="gender">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="age">Patient's Age :</label></td>
+                    <td><input type="text" name="age" id="age"></td>
+                </tr>
+                <tr>
+                    <td><label for="ptype">Patient's Type :</label></td>
+                    <td><input type="text" name="ptype" id="ptype" value="New" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="doctor">Doctor's Name :</label></td>
+                    <td>
+                        <input list="doctors" name="dname" id="dname">
+                        <datalist id="doctors">
+                            <option value="Dr. Sayandip Naskar">
+                            <option value="Dr. Mitra Chakraborty">
+                            <option value="Dr. Sayan Ghosh">
+                            <option value="Dr. Sambit Ghosh">
+                            <option value="Dr. Sudip Koley">
+                          </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="date">Date of Appoinment :</label></td>
+                    <td><input type="date" name="nda" id="nda"></td>
+                </tr>
+                <tr>
+                    <td><label for="message">Message :</label></td>
+                    <td><input type="text" name="message" id="message"></td>
+                </tr>
+            </table>
+            <button type="submit">Book The Appoinment</button>
+        </div>
+        </form>    
+     </div>
+</body>
+</html>

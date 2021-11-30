@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+body{
+    background: aliceblue;
+    padding-bottom: 30px;
+}
+.appoin_heading{
+    font-weight: bold;
+    color:#42FE1E;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0px;
+    position: relative;
+}
+.appoin_heading::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 3px;
+    background-color:#4091FF;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+  }
+
+.main_section{
+    display: flex;
+    align-items: center;
+    padding: 0px 215px;
+}
+.main_section .image img{
+    height: 700px;
+}
+.appoint{
+    padding: 0px 70px;
+}
+.appoint .heading{
+    font-weight: bold;
+    color:#4091FF;
+    font-size: 25px;
+}
+.appoint .content,.ptype_choose strong{
+    color: darkkhaki; 
+    line-height: 25px;
+    padding-top: 10px;
+    text-align: justify;  
+}
+strong,.ptype_choose strong{
+    color:darkgray;
+}
+.old_form{
+    margin: 10px;
+}
+.old_form table{
+    width: 100%;
+}
+.old_form tr td{
+    padding-bottom: 8px;
+    font-size: 15px;
+}
+.old_form tr td:first-child{
+    color: darkkhaki;
+    font-weight: bold;
+}
+.old_form tr td input {
+    font-weight: 300;
+    padding:2.5px 0 2.5px 8px ;
+    background: cornsilk;
+    width: 100%;
+    border-radius: 7px;
+    height: 30px;
+    border: 2px solid #4091FF;
+    color: #4091FF;
+    font-weight: bold;
+}
+.old_form tr td textarea{
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    height: 60px;
+    border: 2px solid #4091FF;
+    padding:2.5px 0 2.5px 8px ;
+    background: cornsilk;
+    color: #4091FF;
+    font-weight: bold;
+}
+.old_form tr td input:hover,.old_form tr td textarea:hover{
+    background:lemonchiffon;
+}
+#gender{
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    
+}
+
+.old_form button{
+    border-style: none;
+    color: white;
+    padding: 15px 20px;
+    font-size: 15px;
+    margin-left: 40px;
+    background-color: 	#4091FF;
+}
+.old_form button:hover{
+    background-color:white;
+    outline: 2px solid 	#4091FF;
+    color: 	#4091FF;
+    font-weight: bold;
+}
+
+@keyframes animate{
+    0%{
+        width: 300px;
+
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 300px;
+    }
+  }
